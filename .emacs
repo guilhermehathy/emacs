@@ -16,6 +16,12 @@
 ;;---------------------------------------------------------------------------
 ;; Chama o Ess para rodar o R
 (require 'ess-site)
+;;---------------------------------------------------------------------------
+;;Quando comentar o codigo, ele não vai para o centro
+(setq ess-fancy-comments nil)
+(add-hook 'ess-mode-hook 
+          (lambda () 
+            (local-set-key (kbd "RET") 'newline)))
 
 ;;---------------------------------------------------------------------------
 ;;Não abrir o Welcome
@@ -38,7 +44,22 @@
 ;; Chama o Elpy, é usado para script Python
 ;;M-x package-list-packages C-s elpy
 ;;
-;;(elpy-enable)
+(elpy-enable)
+;;(elpy-use-ipython)
+
+;; use flycheck not flymake with elpy
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
+;; enable autopep8 formatting on save
+(require 'py-autopep8)
+(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+(custom-set-variables
+ '(python-shell-interpreter "python3"))
+(custom-set-faces
+ )
+
 ;;Corrigindo alguns bugs do Elpy
 ;;(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
 ;;(define-key global-map (kbd "C-c o") 'iedit-mode)

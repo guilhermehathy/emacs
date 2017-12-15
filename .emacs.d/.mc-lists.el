@@ -3,9 +3,11 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	keyboard-escape-quit
 	))
 
 (setq mc/cmds-to-run-once
       '(
+	ein:worksheet-execute-cell-and-goto-next
 	ess-eval-region-or-function-or-paragraph-and-step
 	))
