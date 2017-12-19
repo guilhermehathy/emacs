@@ -1,122 +1,126 @@
-((("plot" .
-   [1 0 0 0])
-  ("ibm" .
-   [3 0 1])
-  ("dbMongo" .
-   [2 0 0 0 0 0 0])
-  ("nrRelevancia" .
+((("palavra" .
+   [1 0 0 0 0 0 0])
+  ("append" .
+   [1 0 0 0 0 0])
+  ("resultadoFor" .
    [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("nrRelevanc" .
-   [0 0 0 0 0 0 0 0 0 1])
-  ("idNoticia" .
-   [1 0 0 2 0 0 0 0 0])
-  ("dados" .
-   [5 0 0 0 0])
-  ("library.dynam" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("install.packages" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("cdPerfil" .
-   [3 0 0 1 1 0 0 0])
-  ("INSERT" .
-   [1 0 0 0 0 0])
-  ("insert" .
-   [0 0 0 0 1 0])
-  ("dbMysql" .
-   [0 0 0 2 0 0 1])
-  ("query" .
+  ("lista" .
    [2 0 0 0 0])
-  ("cdNoticia" .
-   [0 0 0 0 0 0 0 0 1])
-  ("mongo" .
-   [1 0 0 0 0])
-  ("noticia" .
-   [7 0 0 0 0 0 0])
-  ("base" .
-   [1 0 0 0])
-  ("prin" .
-   [6 0 0 0])
-  ("Exception" .
-   [0 0 3 1 0 0 0 0 5])
-  ("except" .
-   [0 0 0 0 0 4])
-  ("try" .
-   [0 0 1])
-  ("cursor" .
+  ("freq_texto" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("testeTodos" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("predito" .
+   [1 0 0 0 0 0 0])
+  ("y_test" .
+   [0 0 0 0 0 2])
+  ("modelo" .
    [1 0 0 0 0 0])
-  ("Package" .
-   [0 0 0 0 1 0 0])
-  ("package-selected-packages" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("quote" .
-   [0 0 0 0 1])
-  ("elpy-mode" .
-   [0 0 0 0 0 1 0 0 0])
-  ("custom-set-faces" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("NOTICIA" .
-   [2 0 0 0 0 0 0])
-  ("limpaTexto" .
-   [0 0 0 0 0 0 0 1 0 0])
-  ("texto" .
-   [5 0 0 0 0])
-  ("print" .
-   [3 0 0 0 1])
-  ("stopwords" .
-   [1 0 0 0 0 0 0 0 0])
-  ("nltk.corpus.stopwords.words" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("dias" .
-   [3 0 0 0])
-  ("gorilaDaBolaAzul" .
-   [0 0 0 1 0 0 2 0 0 0 0 0 0 0 0 0])
-  ("nome" .
-   [1 0 0 0])
-  ("data" .
-   [1 0 0 0])
-  ("datelist" .
-   [0 0 0 0 0 1 0 0])
-  ("nNoticias" .
-   [0 0 1 0 0 0 0 0 0])
-  ("f_m" .
-   [1 0 0])
-  ("documento" .
-   [5 0 0 0 0 0 0 0 0])
-  ("polaridade" .
-   [0 0 0 0 0 0 0 0 1 0])
-  ("score" .
+  ("X_test" .
+   [2 0 1 0 1 1])
+  ("y_train" .
+   [0 0 0 0 0 1 0])
+  ("X_train" .
+   [1 0 0 0 0 0 0])
+  ("classes" .
+   [1 0 0 0 0 0 0])
+  ("concurrent" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("inicial" .
+   [7 0 0 0 0 0 0])
+  ("nLimit" .
+   [1 0 0 0 0 1])
+  ("count" .
    [1 0 0 0 0])
   ("noticias" .
    [2 0 0 0 0 0 0 0])
-  ("count" .
+  ("score" .
    [1 0 0 0 0])
-  ("nLimit" .
-   [1 0 0 0 0 1])
-  ("inicial" .
+  ("polaridade" .
+   [0 0 0 0 0 0 0 0 1 0])
+  ("documento" .
+   [5 0 0 0 0 0 0 0 0])
+  ("f_m" .
+   [1 0 0])
+  ("nNoticias" .
+   [0 0 1 0 0 0 0 0 0])
+  ("datelist" .
+   [0 0 0 0 0 1 0 0])
+  ("data" .
+   [1 0 0 0])
+  ("nome" .
+   [1 0 0 0])
+  ("gorilaDaBolaAzul" .
+   [0 0 0 1 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("dias" .
+   [3 0 0 0])
+  ("nltk.corpus.stopwords.words" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("stopwords" .
+   [1 0 0 0 0 0 0 0 0])
+  ("print" .
+   [3 0 0 0 1])
+  ("texto" .
+   [5 0 0 0 0])
+  ("limpaTexto" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("NOTICIA" .
    [2 0 0 0 0 0 0])
-  ("concurrent" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("classes" .
-   [1 0 0 0 0 0 0])
-  ("X_train" .
-   [1 0 0 0 0 0 0])
-  ("y_train" .
-   [0 0 0 0 0 1 0])
-  ("X_test" .
-   [2 0 0 0 1 1])
-  ("modelo" .
+  ("custom-set-faces" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("elpy-mode" .
+   [0 0 0 0 0 1 0 0 0])
+  ("quote" .
+   [0 0 0 0 1])
+  ("package-selected-packages" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Package" .
+   [0 0 0 0 1 0 0])
+  ("cursor" .
    [1 0 0 0 0 0])
-  ("y_test" .
-   [0 0 1 0 0 2])
-  ("predito" .
-   [1 0 0 0 0 0 0])
-  ("testeTodos" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("freq_texto" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("lista" .
+  ("try" .
+   [0 0 1])
+  ("except" .
+   [0 0 0 0 0 4])
+  ("Exception" .
+   [0 0 3 1 0 0 0 0 5])
+  ("prin" .
+   [9 0 0 0])
+  ("base" .
+   [1 0 0 0])
+  ("noticia" .
+   [7 0 0 0 0 0 0])
+  ("mongo" .
+   [1 0 0 0 0])
+  ("cdNoticia" .
+   [0 0 0 0 0 0 0 0 1])
+  ("query" .
    [2 0 0 0 0])
-  ("resultadoFor" .
+  ("dbMysql" .
+   [0 0 0 2 0 0 1])
+  ("insert" .
+   [0 0 0 0 1 0])
+  ("INSERT" .
+   [1 0 0 0 0 0])
+  ("cdPerfil" .
+   [3 0 0 1 1 0 0 0])
+  ("install.packages" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("library.dynam" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("dados" .
+   [5 0 0 0 0])
+  ("idNoticia" .
+   [1 0 0 2 0 0 0 0 0])
+  ("nrRelevanc" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("nrRelevancia" .
    [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("append" .
-   [1 0 0 0 0 0])))
+  ("dbMongo" .
+   [2 0 0 0 0 0 0])
+  ("ibm" .
+   [3 0 1])
+  ("plot" .
+   [1 0 0 0])
+  ("total" .
+   [2 0 0 0 0])))

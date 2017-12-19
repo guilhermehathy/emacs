@@ -12,6 +12,22 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
+
+;; Standard el-get setup
+;; (See also: https://github.com/dimitri/el-get#basic-setup)
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+(setq warning-minimum-level :emergency)
+(el-get 'sync)
+
+
 (add-to-list 'load-path "~/.emacs.d/pacotes/")
 ;;---------------------------------------------------------------------------
 ;; Chama o Ess para rodar o R
@@ -63,8 +79,9 @@
 ;;Corrigindo alguns bugs do Elpy
 ;;(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
 ;;(define-key global-map (kbd "C-c o") 'iedit-mode)
-;;(add-hook 'python-mode-hook 'jedi:setup)
-;;(setq jedi:complete-on-dot t)
+;; Adicionando o jedi mode, ajuda com o autocomplete
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 
 
 ;;---------------------------------------------------------------------------
