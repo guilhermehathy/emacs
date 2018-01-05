@@ -29,6 +29,11 @@
 
 
 (add-to-list 'load-path "~/.emacs.d/pacotes/")
+
+;; Removendo o Menu e tool bar
+
+(menu-bar-mode -1)
+(tool-bar-mode -1)
 ;;---------------------------------------------------------------------------
 ;; Chama o Ess para rodar o R
 (require 'ess-site)
@@ -72,8 +77,19 @@
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (virtualenv jedi py-autopep8 multiple-cursors material-theme flycheck elpy ein better-defaults)))
  '(python-shell-interpreter "python3"))
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
 
 ;;Corrigindo alguns bugs do Elpy

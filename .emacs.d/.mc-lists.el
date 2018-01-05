@@ -9,5 +9,7 @@
 (setq mc/cmds-to-run-once
       '(
 	ein:worksheet-execute-cell-and-goto-next
+	elpy-nav-forward-indent
 	ess-eval-region-or-function-or-paragraph-and-step
+	mouse-set-region
 	))
