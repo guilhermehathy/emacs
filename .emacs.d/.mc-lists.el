@@ -3,12 +3,16 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	elpy-nav-backward-indent
+	elpy-shell-send-statement-and-step
+	indent-for-tab-command
 	keyboard-escape-quit
 	))
 
 (setq mc/cmds-to-run-once
       '(
 	ein:worksheet-execute-cell-and-goto-next
+	elpy-nav-forward-block
 	elpy-nav-forward-indent
 	ess-eval-region-or-function-or-paragraph-and-step
 	mouse-set-region

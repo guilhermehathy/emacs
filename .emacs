@@ -37,6 +37,11 @@
 ;;---------------------------------------------------------------------------
 ;; Chama o Ess para rodar o R
 (require 'ess-site)
+;;Comentario sem ident
+(setq ess-fancy-comments nil)
+(add-hook 'ess-mode-hook 
+          (lambda () 
+            (local-set-key (kbd "RET") 'newline)))
 ;;---------------------------------------------------------------------------
 ;;Quando comentar o codigo, ele não vai para o centro
 (setq ess-fancy-comments nil)
@@ -83,7 +88,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (virtualenv jedi py-autopep8 multiple-cursors material-theme flycheck elpy ein better-defaults)))
+    (sublimity neon-mode neotree virtualenv jedi py-autopep8 multiple-cursors material-theme flycheck elpy ein better-defaults)))
  '(python-shell-interpreter "python3"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -113,8 +118,9 @@
 ;; Inicar o emacs maximizado e adicionando tema
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;;(load-theme 'flatland t)
-(load-theme 'monokai t)
+(load-theme 'flatland t)
+;;(load-theme 'monokai t)
+;;(load-theme 'dracula t)
 ;;---------------------------------------------------------------------------
 ;;Python3 console, C-c C-p para abrir o console
 (defcustom python-shell-interpreter "python3"
@@ -127,3 +133,12 @@
 
 (setq highlight-indent-guides-method 'character)
 (add-hook 'prog-mode-hook 'highlight-indentation-mode)
+
+
+;;---------------------------------------------------------------------------
+;;aggressive-indent-mode
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+;;---------------------------------------------------------------------------
+;; 
